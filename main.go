@@ -13,5 +13,13 @@ func main() {
 
 	str := os.Args[1]
 	splitedStr := strings.Split(str, " ")
-	fmt.Println(len(splitedStr))
+	count := 0
+
+	for _, i := range splitedStr {
+		if i != "" {
+			count++
+		}
+
+	}
+	fmt.Println(count)
 }
